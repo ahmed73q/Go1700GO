@@ -352,7 +352,7 @@ def run_http_server():
 def main():
     threading.Thread(target=run_http_server, daemon=True).start()
 
-    token = os.environ.get('8573917737:AAGwzxMVdXxwA41l0d06dL8tYlybur0rE8s')
+    token = os.environ.get('TELEGRAM_BOT_TOKEN')
     if not token:
         logger.error("❌ لم يتم تعيين TELEGRAM_BOT_TOKEN")
         return
